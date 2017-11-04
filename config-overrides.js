@@ -12,6 +12,7 @@ module.exports = function override(config, env) {
                 root: ['./src'],
                 alias: {
                     '^@(.+)': './src/components/\\1',
+                    info: './src/constants/info',
                 },
             },
         ],

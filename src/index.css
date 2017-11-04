@@ -1,1 +1,9 @@
 @import '~antd/dist/antd.css';
+
+.app-full {
+    min-height: 100vh;
+}
+
+.main-content {
+    padding: 2vh 2vw;
+}
