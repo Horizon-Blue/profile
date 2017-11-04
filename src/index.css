@@ -4,6 +4,34 @@
     min-height: 100vh;
 }
 
+.app-sider {
+    position: fixed;
+    left: 0;
+}
+
 .main-content {
     padding: 2vh 2vw;
+}
+
+.header-contact {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+@media only screen and (min-width: 768px) {
+    .header-contact div {
+        display: inline;
+    }
+}
+
+.header-contact a {
+    color: #0e77ca;
+}
+
+.header-bio {
+    font-size: larger;
+}
+
+.header-bio p {
+    margin-bottom: 10px;
 }
