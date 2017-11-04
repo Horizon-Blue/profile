@@ -2,9 +2,21 @@ const { injectBabelPlugin } = require('react-app-rewired');
 
 module.exports = function override(config, env) {
     // do stuff with the webpack config...
-    config = injectBabelPlugin(
+    const plugins = [
         ['import', { libraryName: 'antd', style: 'css' }],
-        config
-    );
+        'transform-decorators-legacy',
+        'transform-class-properties',
+        [
+            'module-resolver',
+            {
+                root: ['./src'],
+                alias: {
+                    '^@(.+)': './src/components/\\1',
+                },
+            },
+        ],
+    ];
+
+    for (let plugin of plugins) config = injectBabelPlugin(plugin, config);
     return config;
 };
