@@ -18,6 +18,7 @@ class App extends PureComponent {
                     collapsed={this.state.collapsed}
                     onCollapse={this.handleCollapse}
                     breakpoint="sm"
+                    className="app-sider"
                 >
                     <SideBar collapsed={this.state.collapsed} />
                 </Sider>
