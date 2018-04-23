@@ -33,7 +33,7 @@ class Bio extends PureComponent {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Icon type="github" /> {info.github}
+                            <Icon type="github" /> GitHub
                         </a>
                     </div>
                 </Row>
